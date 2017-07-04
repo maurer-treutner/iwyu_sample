@@ -1,2 +1,3 @@
 # iwyu_sample
-A sample project whowing the use of iwyu
+A sample project showing the use of iwyu
+
