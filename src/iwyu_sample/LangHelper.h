@@ -26,7 +26,6 @@ public:
 	virtual ~LangHelper();
 
 	std::string getHello();
-	std::string getGoodBye();
 
 private:
 	Language _lang;

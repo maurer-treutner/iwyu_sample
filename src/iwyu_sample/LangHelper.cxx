@@ -31,21 +31,3 @@ std::string LangHelper::getHello()
 	}
 	return rv;
 }
-
-std::string LangHelper::getGoodBye()
-{
-	std::string rv;
-
-	switch (_lang)
-	{
-	case ge_ge:
-		rv = "Tschuess";
-		break;
-	case en_en:
-		rv = "Bye bye";
-		break;
-	default:
-		rv = "GOOD BYE (undefined language)";
-	}
-	return rv;
-}

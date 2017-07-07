@@ -1,6 +1,9 @@
 /*
  * HelloHelper.h
  *
+ * A simple demo class for explaining the use of iwyo.
+ * It ist able to great the name given in constructor.
+ *
  *  Created on: Jul 4, 2017
  *      Author: peter
  */
@@ -12,7 +15,6 @@
 #include <memory>
 
 #include "LangHelper.h"
-//class LangHelper;
 
 class HelloHelper {
 public:

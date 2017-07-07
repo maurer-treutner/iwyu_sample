@@ -11,7 +11,7 @@
 
 HelloHelper::HelloHelper(const std::string &name):
   _name(name),
-  _myHelper(new LangHelper(LangHelper::ge_ge))
+  _myHelper(new LangHelper(LangHelper::ge_ge)) // For simplicity, we choose a fixed language
 {}
 
 HelloHelper::~HelloHelper()
