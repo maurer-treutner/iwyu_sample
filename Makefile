@@ -15,18 +15,13 @@ PATH := $(PATH):/usr/local/bin
 GENERATOR := "Unix Makefiles"
 
 # all: ext debug release
-all: debug
-
-.PHONY: ext
-ext:
-	echo $(EXT_DIR)
-	make -C $(EXT_DIR)
+all: debug release
 
 .PHONY: debug
 debug:
 	$(Q)mkdir -p "$(BUILD_DIR_DEBUG)"
 	$(Q)cd "$(BUILD_DIR_DEBUG)" && cmake -G $(GENERATOR) -DCMAKE_BUILD_TYPE=DEBUG -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DINST_DIR="$(INST_DIR_DEBUG)" "$(SOURCE_DIR)"
-	iwyu_tool.py -v -p "$(BUILD_DIR_DEBUG)"
+#	iwyu_tool.py -v -p "$(BUILD_DIR_DEBUG)"
 	$(Q)make -C $(BUILD_DIR_DEBUG) VERBOSE=1
 
 .PHONY: release

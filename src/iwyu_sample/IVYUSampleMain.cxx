@@ -16,4 +16,6 @@ int main(int argc, char *argv[])
 	HelloHelper myHelper("Peter");
 
 	myHelper.sayHello();
+
+	return 0;
 }
