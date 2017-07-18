@@ -1,8 +1,7 @@
 #include <vector>
-#include <stdarg.h>
+#include <cstdarg>
 
 int main(int argc,char *argv[])
 {
 	return 0;
 }
-
