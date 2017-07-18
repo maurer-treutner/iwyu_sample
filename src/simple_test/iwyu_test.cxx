@@ -1,7 +1,8 @@
-#include <vector>
 #include <cstdarg>
+#include <iostream>
+#include <vector>
 
 int main(int argc,char *argv[])
 {
-	return 0;
+	std::cout<<"Test iwyu"<<std::endl;
 }
