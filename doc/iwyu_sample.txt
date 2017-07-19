@@ -1,0 +1,10 @@
+
+iwyu_test.cxx should add these lines:
+
+iwyu_test.cxx should remove these lines:
+- #include <cstdarg>  // lines 1-1
+- #include <vector>  // lines 3-3
+
+The full include-list for iwyu_test.cxx:
+#include <iostream>  // for operator<<, basic_ostream, cout, endl, ostream
+---
