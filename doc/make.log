@@ -1,0 +1,174 @@
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    INST_DIR
+
+
+-- Build files have been written to: /home/peter/github.maurer-treutner/iwyu_sample/build/debug
+make[1]: Entering directory '/home/peter/github.maurer-treutner/iwyu_sample/build/debug'
+/usr/local/bin/cmake -H/home/peter/github.maurer-treutner/iwyu_sample/src -B/home/peter/github.maurer-treutner/iwyu_sample/build/debug --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/bin/cmake -E cmake_progress_start /home/peter/github.maurer-treutner/iwyu_sample/build/debug/CMakeFiles /home/peter/github.maurer-treutner/iwyu_sample/build/debug/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory '/home/peter/github.maurer-treutner/iwyu_sample/build/debug'
+make -f iwyu_sample/CMakeFiles/IVYUSample.dir/build.make iwyu_sample/CMakeFiles/IVYUSample.dir/depend
+make[3]: Entering directory '/home/peter/github.maurer-treutner/iwyu_sample/build/debug'
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/debug && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/peter/github.maurer-treutner/iwyu_sample/src /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample /home/peter/github.maurer-treutner/iwyu_sample/build/debug /home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample /home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample/CMakeFiles/IVYUSample.dir/DependInfo.cmake --color=
+Dependee "/home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample/CMakeFiles/IVYUSample.dir/DependInfo.cmake" is newer than depender "/home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample/CMakeFiles/IVYUSample.dir/depend.internal".
+Dependee "/home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample/CMakeFiles/IVYUSample.dir/depend.internal".
+Scanning dependencies of target IVYUSample
+make[3]: Leaving directory '/home/peter/github.maurer-treutner/iwyu_sample/build/debug'
+make -f iwyu_sample/CMakeFiles/IVYUSample.dir/build.make iwyu_sample/CMakeFiles/IVYUSample.dir/build
+make[3]: Entering directory '/home/peter/github.maurer-treutner/iwyu_sample/build/debug'
+[ 25%] Building CXX object iwyu_sample/CMakeFiles/IVYUSample.dir/IVYUSampleMain.cxx.o
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample && /usr/local/bin/cmake -E __run_iwyu --iwyu=/usr/local/bin/include-what-you-use -- /usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/IVYUSample.dir/IVYUSampleMain.cxx.o -c /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx
+Warning: include-what-you-use reported diagnostics:
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx should add these lines:
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx should remove these lines:
+- #include <iostream>  // lines 10-10
+
+The full include-list for /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx:
+#include "HelloHelper.h"  // for HelloHelper
+---
+
+[ 50%] Building CXX object iwyu_sample/CMakeFiles/IVYUSample.dir/HelloHelper.cxx.o
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample && /usr/local/bin/cmake -E __run_iwyu --iwyu=/usr/local/bin/include-what-you-use -- /usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/IVYUSample.dir/HelloHelper.cxx.o -c /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx
+Warning: include-what-you-use reported diagnostics:
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.h should add these lines:
+class LangHelper;
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.h should remove these lines:
+- #include "LangHelper.h"  // lines 17-17
+
+The full include-list for /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.h:
+#include <memory>  // for shared_ptr
+#include <string>  // for string
+class LangHelper;
+---
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx should add these lines:
+#include "LangHelper.h"  // for LangHelper, LangHelper::::ge_ge
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx should remove these lines:
+
+The full include-list for /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx:
+#include "HelloHelper.h"
+#include <iostream>      // for basic_ostream, operator<<, cout, endl, ostream
+#include "LangHelper.h"  // for LangHelper, LangHelper::::ge_ge
+---
+
+[ 75%] Building CXX object iwyu_sample/CMakeFiles/IVYUSample.dir/LangHelper.cxx.o
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample && /usr/local/bin/cmake -E __run_iwyu --iwyu=/usr/local/bin/include-what-you-use -- /usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/IVYUSample.dir/LangHelper.cxx.o -c /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/LangHelper.cxx
+[100%] Linking CXX executable IVYUSample
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/debug/iwyu_sample && /usr/local/bin/cmake -E cmake_link_script CMakeFiles/IVYUSample.dir/link.txt --verbose=1
+/usr/bin/c++  -g  -rdynamic CMakeFiles/IVYUSample.dir/IVYUSampleMain.cxx.o CMakeFiles/IVYUSample.dir/HelloHelper.cxx.o CMakeFiles/IVYUSample.dir/LangHelper.cxx.o  -o IVYUSample 
+make[3]: Leaving directory '/home/peter/github.maurer-treutner/iwyu_sample/build/debug'
+[100%] Built target IVYUSample
+make[2]: Leaving directory '/home/peter/github.maurer-treutner/iwyu_sample/build/debug'
+/usr/local/bin/cmake -E cmake_progress_start /home/peter/github.maurer-treutner/iwyu_sample/build/debug/CMakeFiles 0
+make[1]: Leaving directory '/home/peter/github.maurer-treutner/iwyu_sample/build/debug'
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    INST_DIR
+
+
+-- Build files have been written to: /home/peter/github.maurer-treutner/iwyu_sample/build/release
+make[1]: Entering directory '/home/peter/github.maurer-treutner/iwyu_sample/build/release'
+/usr/local/bin/cmake -H/home/peter/github.maurer-treutner/iwyu_sample/src -B/home/peter/github.maurer-treutner/iwyu_sample/build/release --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/bin/cmake -E cmake_progress_start /home/peter/github.maurer-treutner/iwyu_sample/build/release/CMakeFiles /home/peter/github.maurer-treutner/iwyu_sample/build/release/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory '/home/peter/github.maurer-treutner/iwyu_sample/build/release'
+make -f iwyu_sample/CMakeFiles/IVYUSample.dir/build.make iwyu_sample/CMakeFiles/IVYUSample.dir/depend
+make[3]: Entering directory '/home/peter/github.maurer-treutner/iwyu_sample/build/release'
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/release && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/peter/github.maurer-treutner/iwyu_sample/src /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample /home/peter/github.maurer-treutner/iwyu_sample/build/release /home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample /home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample/CMakeFiles/IVYUSample.dir/DependInfo.cmake --color=
+Dependee "/home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample/CMakeFiles/IVYUSample.dir/DependInfo.cmake" is newer than depender "/home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample/CMakeFiles/IVYUSample.dir/depend.internal".
+Dependee "/home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample/CMakeFiles/IVYUSample.dir/depend.internal".
+Scanning dependencies of target IVYUSample
+make[3]: Leaving directory '/home/peter/github.maurer-treutner/iwyu_sample/build/release'
+make -f iwyu_sample/CMakeFiles/IVYUSample.dir/build.make iwyu_sample/CMakeFiles/IVYUSample.dir/build
+make[3]: Entering directory '/home/peter/github.maurer-treutner/iwyu_sample/build/release'
+[ 25%] Building CXX object iwyu_sample/CMakeFiles/IVYUSample.dir/IVYUSampleMain.cxx.o
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample && /usr/local/bin/cmake -E __run_iwyu --iwyu=/usr/local/bin/include-what-you-use -- /usr/bin/c++    -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/IVYUSample.dir/IVYUSampleMain.cxx.o -c /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx
+Warning: include-what-you-use reported diagnostics:
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx should add these lines:
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx should remove these lines:
+- #include <iostream>  // lines 10-10
+
+The full include-list for /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx:
+#include "HelloHelper.h"  // for HelloHelper
+---
+
+[ 50%] Building CXX object iwyu_sample/CMakeFiles/IVYUSample.dir/HelloHelper.cxx.o
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample && /usr/local/bin/cmake -E __run_iwyu --iwyu=/usr/local/bin/include-what-you-use -- /usr/bin/c++    -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/IVYUSample.dir/HelloHelper.cxx.o -c /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx
+Warning: include-what-you-use reported diagnostics:
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.h should add these lines:
+class LangHelper;
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.h should remove these lines:
+- #include "LangHelper.h"  // lines 17-17
+
+The full include-list for /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.h:
+#include <memory>  // for shared_ptr
+#include <string>  // for string
+class LangHelper;
+---
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx should add these lines:
+#include "LangHelper.h"  // for LangHelper, LangHelper::::ge_ge
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx should remove these lines:
+
+The full include-list for /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx:
+#include "HelloHelper.h"
+#include <iostream>      // for basic_ostream, operator<<, cout, endl, ostream
+#include "LangHelper.h"  // for LangHelper, LangHelper::::ge_ge
+---
+
+[ 75%] Building CXX object iwyu_sample/CMakeFiles/IVYUSample.dir/LangHelper.cxx.o
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample && /usr/local/bin/cmake -E __run_iwyu --iwyu=/usr/local/bin/include-what-you-use -- /usr/bin/c++    -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/IVYUSample.dir/LangHelper.cxx.o -c /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/LangHelper.cxx
+[100%] Linking CXX executable IVYUSample
+cd /home/peter/github.maurer-treutner/iwyu_sample/build/release/iwyu_sample && /usr/local/bin/cmake -E cmake_link_script CMakeFiles/IVYUSample.dir/link.txt --verbose=1
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/IVYUSample.dir/IVYUSampleMain.cxx.o CMakeFiles/IVYUSample.dir/HelloHelper.cxx.o CMakeFiles/IVYUSample.dir/LangHelper.cxx.o  -o IVYUSample 
+make[3]: Leaving directory '/home/peter/github.maurer-treutner/iwyu_sample/build/release'
+[100%] Built target IVYUSample
+make[2]: Leaving directory '/home/peter/github.maurer-treutner/iwyu_sample/build/release'
+/usr/local/bin/cmake -E cmake_progress_start /home/peter/github.maurer-treutner/iwyu_sample/build/release/CMakeFiles 0
+make[1]: Leaving directory '/home/peter/github.maurer-treutner/iwyu_sample/build/release'
