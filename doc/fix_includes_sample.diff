@@ -1,0 +1,10 @@
+>>> Fixing #includes in 'iwyu_test.cxx'
+@@ -1,6 +1,4 @@
+-#include <cstdarg>
+ #include <iostream>
+-#include <vector>
+
+ int main(int argc,char *argv[])
+ {
+IWYU edited 0 files on your behalf.
+
