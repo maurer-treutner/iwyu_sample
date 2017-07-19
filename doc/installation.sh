@@ -5,5 +5,5 @@ sudo mv include-what-you-use/bin/* /usr/bin
 sudo mv include-what-you-use/lib/* /usr/lib/
 sudo mkdir /usr/share/clang/include-what-you-use/
 sudo mv include-what-you-use/mappings /usr/share/clang/include-what-you-use/
-
+sudo ln /usr/bin/include-what-you-use /usr/bin/iwyu
 
