@@ -1,0 +1,36 @@
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx should add these lines:
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx should remove these lines:
+- #include <iostream>  // lines 10-10
+
+The full include-list for /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/IVYUSampleMain.cxx:
+#include "HelloHelper.h"  // for HelloHelper
+---
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.h should add these lines:
+class LangHelper;
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.h should remove these lines:
+- #include "LangHelper.h"  // lines 17-17
+
+The full include-list for /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.h:
+#include <memory>  // for shared_ptr
+#include <string>  // for string
+class LangHelper;
+---
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx should add these lines:
+#include "LangHelper.h"  // for LangHelper, LangHelper::::ge_ge
+
+/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx should remove these lines:
+
+The full include-list for /home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/HelloHelper.cxx:
+#include "HelloHelper.h"
+#include <iostream>      // for basic_ostream, operator<<, cout, endl, ostream
+#include "LangHelper.h"  // for LangHelper, LangHelper::::ge_ge
+---
+
+(/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/LangHelper.h has correct #includes/fwd-decls)
+
+(/home/peter/github.maurer-treutner/iwyu_sample/src/iwyu_sample/LangHelper.cxx has correct #includes/fwd-decls)
