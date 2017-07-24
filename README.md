@@ -6,5 +6,3 @@ This sample has been developed under Linux (Ubuntu 16.04) as a sample illustrati
 On Unix like systems, you can build the project using the Makefile in its root directory. Make files and build results will be places into directory build.
 
 Please note the IWYU restrictions regarding generators when trying to build for another generator than Unix Makefiels.
-
-This software is provided under the Boost Software License 1.0 
